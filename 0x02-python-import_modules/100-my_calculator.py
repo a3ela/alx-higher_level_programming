@@ -13,13 +13,15 @@ b = int(sys.argv[3])
 
 match opr:
     case '+':
-        print('{} + {} = {}'.format(a, b, add(a, b)))
+        result = add(a, b)
     case '-':
-        print('{} + {} = {}'.format(a, b, sub(a, b)))
+        result = sub(a, b)
     case '*':
-        print('{} + {} = {}'.format(a, b, mul(a, b)))
+        result = mul(a, b)
     case '/':
-        print('{} + {} = {}'.format(a, b, div(a, b)))
+        result = div(a, b)
     case _:
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
+
+print('{} + {} = {}'.format(a , b, result))
