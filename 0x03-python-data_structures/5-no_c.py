@@ -6,5 +6,5 @@ def no_c(my_string):
             pass
         else:
             newString += letter
-    
+
     return newString
